@@ -9,7 +9,7 @@ pipeline {
 		}		
 		stage('Install node dependencies'){
 			steps {
-				sh 'npm install'
+				
 			}
 		}
 		stage('Build Docker Image'){
@@ -22,7 +22,7 @@ pipeline {
 		}
 		stage('Trivy Scan'){
 			steps {
-				
+				echo "trivy"
 			}
 		}
 		stage('Push Image to DockerHub'){
@@ -44,7 +44,7 @@ pipeline {
 		stage('Apply Kubernetes Manifests & Sync App with ArgoCD'){
 			steps {
 				script {
-					
+					echo "just"
 						
 					}	
 				}
