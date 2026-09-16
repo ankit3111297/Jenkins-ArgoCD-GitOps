@@ -9,7 +9,7 @@ pipeline {
 		}		
 		stage('Install node dependencies'){
 			steps {
-				
+				echo "node"
 			}
 		}
 		stage('Build Docker Image'){
