@@ -3,6 +3,8 @@ pipeline {
 	tools {
 		nodejs 'NodeJS'
 	}
+	environment {
+		DOCKER_HUB_REPO = 'ankitankur/my-k8s-app'
 	stages {
 		stage('Checkout Github'){
 			steps {
@@ -18,6 +20,7 @@ pipeline {
 			steps {
 				script {
 					echo 'building docker image...'
+					docker.build("${DOCKER_HUB_REPO}:latest")
 					
 				}
 			}
