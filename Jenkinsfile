@@ -33,7 +33,7 @@ pipeline {
 						}
 					}
 				}
-			}
+			
 		stage('Install Kubectl & ArgoCD CLI'){
 			steps {
 				
@@ -50,7 +50,7 @@ pipeline {
 				}
 			}
 		}
-	}
+	
 
 	post {
 		success {
