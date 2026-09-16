@@ -5,6 +5,7 @@ pipeline {
 	}
 	environment {
 		DOCKER_HUB_REPO = 'ankitankur/my-k8s-app'
+	}
 	stages {
 		stage('Checkout Github'){
 			steps {
