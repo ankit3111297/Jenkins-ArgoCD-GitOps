@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: node-app
-        image: iquantc/iquant-app:latest
+        image: ankitankur/my-k8s-app:latest
         ports:
         - containerPort: 3000
 
